@@ -18,6 +18,9 @@ public class DrawDynamicLine : MonoBehaviour {
 
         LineRenderer lineNew = lineRendererContainer.AddComponent<LineRenderer>();
 
+        // 2018年11月3日追加
+        lineNew.material = new Material(Shader.Find("Mobile/Particles/Additive"));
+
         lineNew.startColor = Color.blue;
         lineNew.endColor = Color.red;
         //第一引数には始点、第二引数には終点の色を渡します。
